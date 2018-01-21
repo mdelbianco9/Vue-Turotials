@@ -1,0 +1,43 @@
+div {
+	margin: 0px;
+	text-align: center;
+	padding: 10%;
+}
+
+div > div {
+	color: white;
+	height: 300px;
+	width: 300px;
+	display: inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.2rem;
+}
+
+div > div:nth-child(1) {
+	background-color: #ff5b5b;
+}
+
+div > div:nth-child(2) {
+	background-color: #ffea5b;
+}
+
+div > div:nth-child(3) {
+	background-color: #4890e5;
+}
+
+div > div:nth-child(4) {
+	background-color: #a3e684;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
