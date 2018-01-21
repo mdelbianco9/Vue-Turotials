@@ -28,32 +28,33 @@
 <body>
 
 <div class="row">
-  <div id="app" class="col-3">
+  <div id="app" class="col-4">
     {{ message }}
   </div>
 
-  <div id="app-2" class="col-3">
+  <div id="app-2" class="col-4">
     <span v-bind:title="message">
       Hover your mouse over me for a few seconds
       to see my dynamically bound title!
     </span>
   </div>
 
-  <div id="app-3" class="col-3">
+  <div id="app-3" class="col-4">
     <span v-if="seen">Now you see me</span>
   </div>
+</div>
 
-  <div id="app-4" class="col-3">
+<div class="row">
+
+  <div id="app-4" class="col-4">
     <ol>
       <li v-for="todo in todos">
         {{ todo.text }}
       </li>
     </ol>
   </div>
-</div>
 
-<div class="row">
-  <div id="mylist" class="col-3">
+  <div id="mylist" class="col-4">
   	<ul>
   		<li v-for="list in lists">
   			{{ list.item }}
@@ -61,17 +62,20 @@
   	</ul>
   </div>
 
-  <div id="app-5" class="col-3">
+  <div id="app-5" class="col-4">
     <p>{{ message }}</p>
     <button v-on:click="reverseMessage" class="btn">Reverse Message</button>
   </div>
+</div>
 
-  <div id="app-6" class="col-3">
-    <p>Hello there {{ message }}</p>
+<div class="row">
+
+  <div id="app-6" class="col-4">
+    <p>Hello there <br>{{ message }}</p>
     <input v-model="message">
   </div>
 
-  <div id="app-7" class="col-3">
+  <div id="app-7" class="col-4">
     <ol>
       <!--
         Now we provide each todo-item with the todo object
@@ -86,27 +90,29 @@
       </todo-item>
     </ol>
   </div>
-</div>
 
-<div class="row">
   <!-- Vue Instance -->
-  <div id="app1" class="col-3">
+  <div id="app1" class="col-4">
     <p>Freeze object form changing</p>
     <p>{{ obj.foo }}</p>
     <!-- this will no longer update obj.foo! -->
     <button class="btn" @click="obj.foo = 'baz'">Change it</button>
   </div>
+</div>
+
+<div class="row">
 
   <!-- Computed Properties -->
-  <div id="example" class="col-3">
+  <div id="example" class="col-4">
     <p>Original message: "{{ message }}"</p>
     <p>Computed reversed message: "{{ reversedMessage }}"</p>
     <input v-model="message">
   </div>
+
 </div>
 
 
-
+  
 
 
 
