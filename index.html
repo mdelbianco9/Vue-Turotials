@@ -112,6 +112,20 @@
 </div>
 
 
+  <div id="pBar">
+    <h1>Progress bar using Vue</h1>
+    <h6>V-bind:style used to set width. v-on:click="" to start function.</h6>
+    <div class="progress-bar1" style="width: 500px; height: 75px; background-color: lightgrey;padding: 5px; text-align: left;">
+
+      <div class="progress-bar" style="width: 50%; height: 100%; background-color: #4ae1fe;padding: 5px; color: white; text-align: center;" v-bind:style="{width: progress + '%'}">
+        
+        {{ progress + '%' }}
+
+      </div>
+    </div>
+    <button v-on:click="start" type="button" class="btn-lg">Start</button>
+  </div>
+
   
 
 

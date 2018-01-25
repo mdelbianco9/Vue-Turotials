@@ -109,4 +109,31 @@ var vm = new Vue({
   }
 })
 
+new Vue({
+  el: '#pBar',
+  data: {
+    progress: 0
+  },
+  methods: {
+    start: function() {
+      var vm = this;
+      var width = 1;
+     var increase = setInterval(function() {
+        vm.progress += width;
+        if(vm.progress >= 100) {
+          clearInterval(increase);
+          $('.progress-bar').css("background-color", "#75cf7b");
+        }
+
+      }, 10);
+    }
+  }
+})
+
+
+
+
+
+
+
 
