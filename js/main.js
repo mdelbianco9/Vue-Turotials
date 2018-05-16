@@ -125,10 +125,14 @@ new Vue({
           $('.progress-bar').css("background-color", "#75cf7b");
         }
 
-      }, 10);
+      }, 50);
     }
   }
 })
+
+for(var i=0;i<5;i++){
+  setTimeout(function(){console.log(i)},1)
+}
 
 
 
